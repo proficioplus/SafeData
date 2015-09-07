@@ -1,5 +1,4 @@
-<LinearLayout
-    android:orientation="vertical"
+<TableLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_alignParentTop="true"
@@ -10,55 +9,92 @@
     android:paddingTop="100dp"
     android:paddingBottom="150dp"
     android:gravity="center_horizontal"
-    android:baselineAligned="false">
+    android:baselineAligned="false"
+    android:stretchColumns="2">
 
 
-    <ImageButton
-        android:layout_width="wrap_content"
+    <TableRow android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:gravity="center_vertical|center_horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="5dp">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Backup"
+            android:id="@+id/btnBackup"
+            android:background="@drawable/backup"
+            android:layout_marginRight="40dp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Restore"
+            android:id="@+id/btnRestore"
+            android:background="@drawable/restore" />
+    </TableRow>
+
+    <TableRow android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="New Button"
-        android:id="@+id/btnBackup"
-        android:background="@drawable/backup"
-        />
+        android:gravity="center_vertical|center_horizontal"
+        android:paddingBottom="10dp">
 
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New Button"
-        android:id="@+id/btnRestore"
-        android:background="@drawable/restore"
-        />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Data Transfer"
+            android:id="@+id/btnTransfer"
+            android:background="@drawable/backup"
+            android:layout_marginRight="40dp" />
 
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New Button"
-        android:id="@+id/btnTransfer"
-        android:background="@drawable/backup"
-        />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Archives"
+            android:id="@+id/btnHistory"
+            android:background="@drawable/schedule"
+            />
+    </TableRow>
 
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New Button"
-        android:id="@+id/btnHistory"
-        android:background="@drawable/schedule"
-        />
+    <TableRow android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:gravity="center_vertical|center_horizontal">
 
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New Button"
-        android:id="@+id/btnSettings"
-        android:background="@drawable/edit"
-        />
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Settings"
+            android:id="@+id/btnSettings"
+            android:background="@drawable/edit"
+            android:layout_marginRight="40dp" />
 
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New Button"
-        android:id="@+id/btnHelp"
-        android:background="@drawable/backup"
-        />
-</LinearLayout>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Help"
+            android:id="@+id/btnHelp"
+            android:background="@drawable/backup"
+            />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text"
+            android:id="@+id/textView" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text"
+            android:id="@+id/textView2" />
+    </TableRow>
+</TableLayout>
 
